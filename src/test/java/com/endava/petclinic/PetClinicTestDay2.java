@@ -10,7 +10,6 @@ import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
-import java.util.zip.GZIPInputStream;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -18,6 +17,7 @@ import static org.hamcrest.Matchers.is;
 
 public class PetClinicTestDay2 {
     //CAND FACEM POST AVEM NEVOIE DE BODY SI CONTENT TYPE
+   //Crearea unui nou owner
     @Test
     public void postOwnerTest() {
 //pt serializare trebuie adaugat jackson-databind
